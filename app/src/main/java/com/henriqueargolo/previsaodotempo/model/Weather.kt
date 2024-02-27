@@ -8,5 +8,6 @@ import kotlinx.serialization.Serializable
 data class Weather(
     @SerialName("main") var main: Main? = Main(),
     @SerialName("weather") var weather: List<AditionalInfo> = listOf(AditionalInfo()),
-    @SerialName("name") var name: String? = null
+    @SerialName("name") var name: String? = null,
+    @SerialName("sys") var sys: Sys = Sys()
 )
